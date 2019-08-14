@@ -1,0 +1,3 @@
+nvcc -std=c++11 -c -o utils.cu.o utils.cu -I /usr/local -I /local-scratch2/mypython/lib/python2.7/site-packages/tensorflow/include -I/local-scratch2/mypython/lib/python2.7/site-packages/tensorflow/include/external/nsync/public -D GOOGLE_CUDA=1 -x cu -Xcompiler -fPIC
+g++ -std=c++11 -shared -o utils.so utils.cu.o -I /local-scratch2/mypython/lib/python2.7/site-packages/tensorflow/include -I/local-scratch2/mypython/lib/python2.7/site-packages/tensorflow/include/external/nsync/public -fPIC -L/usr/local/cuda/lib64 -lcudart -L/local-scratch2/mypython/lib/python2.7/site-packages/tensorflow -ltensorflow_framework
+#add -D_GLIBCXX_USE_CXX11_ABI=0 if tensorflow is not compiled from source
