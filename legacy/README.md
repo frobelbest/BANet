@@ -1,1 +1,1 @@
-**Source Code for BA-Net: Dense Bundle Adjustment Networks(Under Reconstruction)**
+leagcy model:https://drive.google.com/drive/folders/1bmm5fturIlvxXplgvDvRQ3kDV7cRcarC?usp=sharing
